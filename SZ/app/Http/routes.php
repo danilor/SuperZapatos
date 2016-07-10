@@ -16,3 +16,4 @@ Route::get('stores', function () { return view('stores'); });
 Route::get('articles', function () { return view('articles'); });
 Route::get('/store/{id}', 'StoresController@store_form');
 Route::post('/save/store', 'StoresController@save_store');
+Route::get('/delete/store/{id}', 'StoresController@delete_store');

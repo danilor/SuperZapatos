@@ -58,5 +58,14 @@ class StoresController extends Controller {
 
     }
 
+    public function delete_store(){
+        $id = Request::segment(3);
+        $store = \App\store::find($id);
+        if($store != null){
+                $store->delete();
+        }
+        return Redirect::to("stores");
+    }
+
 
 }

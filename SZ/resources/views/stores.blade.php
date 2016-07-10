@@ -11,7 +11,8 @@
             <th>{{ 'ID'  }}</th>
             <th>{{ 'NAME'  }}</th>
             <th>{{ 'ADDRESS'  }}</th>
-            <th>{{ 'ACTION'  }}</th>
+            <th>{{ 'MODIFY'  }}</th>
+            <th>{{ 'DELETE'  }}</th>
         </tr>
         </thead>
         <tfoot>
@@ -19,7 +20,8 @@
             <th>{{ 'ID'  }}</th>
             <th>{{ 'NAME'  }}</th>
             <th>{{ 'ADDRESS'  }}</th>
-            <th>{{ 'ACTION'  }}</th>
+            <th>{{ 'MODIFY'  }}</th>
+            <th>{{ 'DELETE'  }}</th>
         </tr>
         </tfoot>
         <tbody>
@@ -30,6 +32,9 @@
                     <td>{{ $s->address  }}</td>
                     <td>
                         <a href="../store/{{$s->id}}" class="btn btn-info" role="button">{{ "Modify"  }}</a>
+                    </td>
+                    <td>
+                        <a href="../delete/store/{{$s->id}}" class="btn btn-danger" role="button">{{ "Delete"  }}</a>
                     </td>
                 </tr>
             @endforeach

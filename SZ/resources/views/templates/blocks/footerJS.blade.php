@@ -1,8 +1,8 @@
-<script type="text/javascript" src="../js/jquery-2.2.4.min.js"></script>
-<script type="text/javascript" src="../assets/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../assets/Datatables/datatables.min.js"></script>
-<script type="text/javascript" src="../js/jquery.validate.min.js"></script>
-<script type="text/javascript" src="../js/jquery.validate.additional-methods.min.js"></script>
+<script type="text/javascript" src="/js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/Datatables/datatables.min.js"></script>
+<script type="text/javascript" src="/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/js/jquery.validate.additional-methods.min.js"></script>
 
 <script type="text/javascript">
     $( document ).ready(function() {

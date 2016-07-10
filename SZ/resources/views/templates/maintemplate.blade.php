@@ -8,7 +8,7 @@
         <aside class="sm-side sidebar_lg">
             <div class="user-head">
                 <a class="inbox-avatar" href="javascript:;">
-                    <img  width="64" hieght="60" src="../img/logo.jpg">
+                    <img  width="64" hieght="60" src="/img/logo.jpg">
                 </a>
                 <div class="user-name">
                     <h5><a href="/">{{config("app.name")}}</a></h5>
@@ -21,16 +21,16 @@
             </div>
             <ul class="inbox-nav inbox-divider">
                 <li class="@if( in_array(Request::segment(1),['stores','store'])  ) active @endif">
-                    <a href="../stores"><i class="fa fa-building"></i> {{ "Stores"  }}</a>
+                    <a href="/stores"><i class="fa fa-building"></i> {{ "Stores"  }}</a>
                 </li>
                 <li class="@if( in_array(Request::segment(1),['articles','article'])  ) active @endif">
-                    <a href="../articles"><i class="fa fa-cubes"></i> {{ "Articles"  }}</a>
+                    <a href="/articles"><i class="fa fa-cubes"></i> {{ "Articles"  }}</a>
                 </li>
 
             </ul>
             <div class="inbox-body text-center">
                 <center>
-                    <img width="100%" src="../img/dj.png" />
+                    <img width="100%" src="/img/dj.png" />
                 </center>
             </div>
         </aside>
