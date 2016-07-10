@@ -25,3 +25,15 @@ Route::get('articles', function () { return view('articles'); });
 Route::get('/article/{id?}', 'ArticlesController@article_form');
 Route::post('/save/article', 'ArticlesController@save_article');
 Route::get('/delete/article/{id}', 'ArticlesController@delete_article');
+
+//Services
+
+Route::group(['prefix' => 'services','middleware' => 'api.auth'], function () {
+    Route::get('/stores', 'ServicesController@stores'); //All stores
+    Route::get('/articles', 'ServicesController@articles'); //All articles
+    Route::get('/articles/stores/{id}', 'ServicesController@articles_in_store'); //All articles
+
+    //All other requests that are not listed here in the route grouping
+    Route::get('/{p1?}/{p2?}/{p3?}/{p4?}/{p5?}/{p6?}', 'ServicesController@missing');
+
+});

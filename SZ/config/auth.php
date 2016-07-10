@@ -104,4 +104,12 @@ return [
         ],
     ],
 
+
+    // Default users for the API
+
+    'api_users'     =>      [
+            'my_user'       =>      'my_password'
+
+    ]
+
 ];

@@ -75,5 +75,5 @@ class ArticlesController extends Controller {
         }
         return Redirect::to("articles");
     }
-    
+
 }

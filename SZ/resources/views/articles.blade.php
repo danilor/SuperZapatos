@@ -33,7 +33,7 @@
         </tr>
         </tfoot>
         <tbody>
-            @foreach(\App\article::select('articles.*','stores.name AS store_name')->leftJoin('stores', 'stores.id', '=', 'articles.store_id')->get() AS $s)
+            @foreach(\App\Classes\Articles::getArticles() AS $s)
                 <tr>
                     <td>{{ $s->id  }}</td>
                     <td>{{ $s->name  }}</td>
