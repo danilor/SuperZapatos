@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function () { return view('index'); });
+Route::get('stores', function () { return view('stores'); });
+Route::get('articles', function () { return view('articles'); });
+Route::get('/store/{id}', 'StoresController@store_form');
+Route::post('/save/store', 'StoresController@save_store');

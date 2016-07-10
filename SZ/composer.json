@@ -7,7 +7,7 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
-		"illuminate/html": "5.*",
+        "laravelcollective/html": "5.*",
 		"doctrine/dbal":"@dev",
 		"guzzlehttp/guzzle": "~5.0",
 		"barryvdh/laravel-ide-helper":"^2.1"
@@ -22,7 +22,7 @@
     "autoload": {
         "classmap": [
             "database",
-			"app/Class"
+            "app/Classes"
         ],
         "psr-4": {
             "App\\": "app/"
