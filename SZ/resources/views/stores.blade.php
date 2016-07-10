@@ -31,10 +31,10 @@
                     <td>{{ $s->name  }}</td>
                     <td>{{ $s->address  }}</td>
                     <td>
-                        <a href="../store/{{$s->id}}" class="btn btn-info" role="button">{{ "Modify"  }}</a>
+                        <a href="/store/{{$s->id}}" class="btn btn-info" role="button">{{ "Modify"  }}</a>
                     </td>
                     <td>
-                        <a href="../delete/store/{{$s->id}}" class="btn btn-danger" role="button">{{ "Delete"  }}</a>
+                        <a href="/delete/store/{{$s->id}}" class="btn btn-danger" role="button">{{ "Delete"  }}</a>
                     </td>
                 </tr>
             @endforeach

@@ -23,7 +23,9 @@ class StoresController extends Controller {
         $id = Request::segment(2);
         $store = \App\store::find($id);
         if($store == null){
-            return Response::view('errors.404', [], 404);
+            $store = new \stdClass();
+            $store -> name = 'New Store';
+            $store -> address = 'New Address';
         }
         $data['store'] = $store;
         return view('store_modify')->with($data);

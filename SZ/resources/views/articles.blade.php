@@ -15,6 +15,8 @@
             <th>{{ 'IN SHELF'  }}</th>
             <th>{{ 'IN VAULT'  }}</th>
             <th>{{ 'STORE'  }}</th>
+            <th>{{ 'MODIFY'  }}</th>
+            <th>{{ 'DELETE'  }}</th>
         </tr>
         </thead>
         <tfoot>
@@ -26,6 +28,8 @@
             <th>{{ 'IN SHELF'  }}</th>
             <th>{{ 'IN VAULT'  }}</th>
             <th>{{ 'STORE'  }}</th>
+            <th>{{ 'MODIFY'  }}</th>
+            <th>{{ 'DELETE'  }}</th>
         </tr>
         </tfoot>
         <tbody>
@@ -38,6 +42,12 @@
                     <td>{{ $s->total_in_shelf  }}</td>
                     <td>{{ $s->total_in_vault  }}</td>
                     <td>[{{ $s->store_id }}]{{ $s->store_name  }}</td>
+                    <td>
+                        <a href="/article/{{$s->id}}" class="btn btn-info" role="button">{{ "Modify"  }}</a>
+                    </td>
+                    <td>
+                        <a href="/delete/article/{{$s->id}}" class="btn btn-danger" role="button">{{ "Delete"  }}</a>
+                    </td>
                 </tr>
             @endforeach
         </tbody>

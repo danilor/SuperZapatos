@@ -14,10 +14,17 @@
                     <h5><a href="/">{{config("app.name")}}</a></h5>
                 </div>
             </div>
-            <div class="inbox-body">
-                <a href="#myModal" data-toggle="modal"  title="{{ "Add Article" }}"    class="btn btn-compose">
-                    {{ "Add Article" }}
-                </a>
+            <div class="inbox-body main_buttons">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <a href="/article" data-toggle="modal"  title="{{ "Add Article" }}"    class="btn btn-compose">
+                        <span class="fa fa-plus"></span> {{ "Article" }}
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <a href="/store" data-toggle="modal"  title="{{ "Add Store" }}"    class="btn btn-compose col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <span class="fa fa-plus"></span> {{ "Store" }}
+                    </a>
+                </div>
             </div>
             <ul class="inbox-nav inbox-divider">
                 <li class="@if( in_array(Request::segment(1),['stores','store'])  ) active @endif">

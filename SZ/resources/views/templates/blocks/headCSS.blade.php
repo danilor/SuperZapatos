@@ -386,4 +386,9 @@
         color:red;
     }
 
+    .main_buttons{
+        margin-bottom: 10px;
+        height: 75px!important;
+    }
+
 </style>

@@ -11,9 +11,17 @@
 |
 */
 
+// Main route
 Route::get('/', function () { return view('index'); });
+
+//Stores Route
 Route::get('stores', function () { return view('stores'); });
-Route::get('articles', function () { return view('articles'); });
-Route::get('/store/{id}', 'StoresController@store_form');
+Route::get('/store/{id?}', 'StoresController@store_form');
 Route::post('/save/store', 'StoresController@save_store');
 Route::get('/delete/store/{id}', 'StoresController@delete_store');
+
+//Articles Route
+Route::get('articles', function () { return view('articles'); });
+Route::get('/article/{id?}', 'ArticlesController@article_form');
+Route::post('/save/article', 'ArticlesController@save_article');
+Route::get('/delete/article/{id}', 'ArticlesController@delete_article');
